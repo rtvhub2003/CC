@@ -21,7 +21,7 @@
 
 <br>Note: It'll take a few minutes and your CC will be programmed automatically.
 
-[Step4: minicom terminal]
+# [Step4: minicom terminal]
 
 <br>* `ls`
 <br>* `ifconfig`
