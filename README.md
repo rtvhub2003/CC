@@ -29,6 +29,7 @@
 #[Step5 (not required) : Minicom | For Manual testing]
 
 <br>##remote [music + live]:
+
 `gst-launch-1.0 -v \
 udpsrc port=5000 \
 caps="application/x-rtp,media=audio,payload=96,clock-rate=12000,encoding-name=L24,channels=2" \
