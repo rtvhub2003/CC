@@ -1,4 +1,4 @@
-#[Step1: In minicom terminal]
+# [Step1: In minicom terminal]
 <br>* check if IP Address is assigned.
 
 <br>`ifconfig`
@@ -9,12 +9,12 @@
 
 <br>* Verify IP Address
 
-#[Step2: Laptop terminal]
+# [Step2: Laptop terminal]
 <br>* Access SSH terminal, and provide ssh-keygen and fingerprints if required
 
 <br>`ssh root@192.168.3.2`
 
-#[Step3: Laptop]
+# [Step3: Laptop]
 <br>* Visit inside 'CC_G2L' folder and perform below command for file transfer
 
 <br>`./installer.sh 192.168.3.2`
@@ -26,9 +26,9 @@
 <br>* `ls`
 <br>* `ifconfig`
 
-#[Step5 (not required) : Minicom | For Manual testing]
+# [Step5 (not required) : Minicom | For Manual testing]
 
-<br>##remote [music + live]:
+## remote [music + live]:
 
 `gst-launch-1.0 -v \
 udpsrc port=5000 \
@@ -38,9 +38,9 @@ caps="application/x-rtp,media=audio,payload=96,clock-rate=12000,encoding-name=L2
 ! alsasink`
 
 
-#[ Step6: Laptop]
+# [ Step6: Laptop]
 
-##host [music testing]:
+## host/laptop [music testing]:
 
 `gst-launch-1.0 -v \
 filesrc location=corporatetime-tutorial-tutorial-music-512462.mp3 \
@@ -52,7 +52,7 @@ filesrc location=corporatetime-tutorial-tutorial-music-512462.mp3 \
 ! udpsink host=192.168.3.2 port=5000`
 <br> And check the audio play whether you're able to hear any sound.
 
-##host [Live announcement/mic testing]
+## host/laptop [Live announcement/mic testing]
 
 `gst-launch-1.0 -v \
 alsasrc \
