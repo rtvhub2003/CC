@@ -89,7 +89,7 @@ alsasrc \
 <br>`ssh root@192.168.3.2`
 
 # [Step3: Laptop]
-<br> Visit inside 'CC_G2L' folder and perform below command for file transfer
+<br> Visit inside 'CC_G2L_Scratch' folder and perform below command for file transfer
 ### Transfer files To /home/root/
 ### [Laptop]
 `scp button_audio.sh root@192.168.3.2:/home/root/`
