@@ -103,7 +103,7 @@ alsasrc \
 ### Transfer service files To /etc/systemd/system/
 ### [Laptop]
 <br>`scp button-control.service root@192.168.3.2:/etc/systemd/system/`
-<br>`scp cc_audio.service root@192.168.3.2:/etc/systemd/system/`
+<br>`scp cc-audio.service root@192.168.3.2:/etc/systemd/system/`
 <br>`scp cc-control.service root@192.168.3.2:/etc/systemd/system/`
 <br>`scp cc-volume.service root@192.168.3.2:/etc/systemd/system/`
 <br>`scp network-activation.service root@192.168.3.2:/etc/systemd/system/`
