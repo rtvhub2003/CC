@@ -70,6 +70,7 @@ alsasrc \
 # ____________________________________
 # ____________________________________
 # ____________________________________
+
 # USING COMMANDLINE INTERFACE
 
 # [Step1: In minicom terminal]
@@ -92,47 +93,47 @@ alsasrc \
 <br> Visit inside 'CC_G2L_Scratch' folder and perform below command for file transfer
 ### Transfer files To /home/root/
 ### [Laptop]
-`scp button_audio.sh root@192.168.3.2:/home/root/`
-`scp cc_audio_control.sh root@192.168.3.2:/home/root/`
-`scp cc_volume_server.py root@192.168.3.2:/home/root/`
-`scp ip_set_icdu.py root@192.168.3.2:/home/root/`
-`scp start_multicastEmu.sh root@192.168.3.2:/home/root/`
-`scp testaudio.wav root@192.168.3.2:/home/root/`
+<br>`scp button_audio.sh root@192.168.3.2:/home/root/`
+<br>`scp cc_audio_control.sh root@192.168.3.2:/home/root/`
+<br>`scp cc_volume_server.py root@192.168.3.2:/home/root/`
+<br>`scp ip_set_icdu.py root@192.168.3.2:/home/root/`
+<br>`scp start_multicastEmu.sh root@192.168.3.2:/home/root/`
+<br>`scp testaudio.wav root@192.168.3.2:/home/root/`
 
 ### Transfer service files To /etc/systemd/system/
 ### [Laptop]
-`scp button-control.service root@192.168.3.2:/etc/systemd/system/`
-`scp cc_audio.service root@192.168.3.2:/etc/systemd/system/`
-`scp cc-control.service root@192.168.3.2:/etc/systemd/system/`
-`scp cc-volume.service root@192.168.3.2:/etc/systemd/system/`
-`scp network-activation.service root@192.168.3.2:/etc/systemd/system/`
+<br>`scp button-control.service root@192.168.3.2:/etc/systemd/system/`
+<br>`scp cc_audio.service root@192.168.3.2:/etc/systemd/system/`
+<br>`scp cc-control.service root@192.168.3.2:/etc/systemd/system/`
+<br>`scp cc-volume.service root@192.168.3.2:/etc/systemd/system/`
+<br>`scp network-activation.service root@192.168.3.2:/etc/systemd/system/`
 
 ### Set execute permissions 
 ### [Minicom]
-`chmod a+x button_audio.sh`
-`chmod a+x cc_audio_control.sh`
-`chmod a+x start_multicastEmu.sh`
+<br>`chmod a+x button_audio.sh`
+<br>`chmod a+x cc_audio_control.sh`
+<br>`chmod a+x start_multicastEmu.sh`
 
 ### Activate GPIO pins
 ### [Minicom]
-`echo 144 > /sys/class/gpio/export`
-`echo in > /sys/class/gpio/P3_0/direction`
-`echo 1 > /sys/class/gpio/P3_0/value`
-`echo 162 > /sys/class/gpio/export`
-`echo out > /sys/class/gpio/P5_2/direction`
-`echo 1 > /sys/class/gpio/P5_2/value`
+<br>`echo 144 > /sys/class/gpio/export`
+<br>`echo in > /sys/class/gpio/P3_0/direction`
+<br>`echo 1 > /sys/class/gpio/P3_0/value`
+<br>`echo 162 > /sys/class/gpio/export`
+<br>`echo out > /sys/class/gpio/P5_2/direction`
+<br>`echo 1 > /sys/class/gpio/P5_2/value`
 
 ### Enable and Activate services
 ### [Minicom]
-`systemctl daemon-reload`
-`systemctl enable /etc/systemd/system/cc-volume.service`
-`systemctl enable /etc/systemd/system/button-control.service`
-`systemctl enable /etc/systemd/system/cc-audio.service`
-`systemctl enable /etc/systemd/system/cc-control.service`
-`systemctl enable /etc/systemd/system/network-activation.service`
+<br>`systemctl daemon-reload`
+<br>`systemctl enable /etc/systemd/system/cc-volume.service`
+<br>`systemctl enable /etc/systemd/system/button-control.service`
+<br>`systemctl enable /etc/systemd/system/cc-audio.service`
+<br>`systemctl enable /etc/systemd/system/cc-control.service`
+<br>`systemctl enable /etc/systemd/system/network-activation.service`
 
 ### Restart your device to apply changes
 ### [Minicom]
-`reboot`
+<br>`reboot`
 
 [END]
